@@ -306,7 +306,7 @@ const Header: React.FC = () => {
                 <SocialIcon platform="github" size={20} />
               </SocialLink>
               <SocialLink 
-                href="https://linkedin.com/in/yourprofile" 
+                href="https://www.linkedin.com/in/saad-chattha-568901263/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 title="LinkedIn Profile"

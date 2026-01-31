@@ -242,7 +242,7 @@ const Home: React.FC = () => {
             <SocialLink href="https://github.com/saadi-js" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
               🐙
             </SocialLink>
-            <SocialLink href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
+            <SocialLink href="https://www.linkedin.com/in/saad-chattha-568901263/" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
               💼
             </SocialLink>
             <SocialLink href="mailto:your.email@example.com" title="Email Contact">

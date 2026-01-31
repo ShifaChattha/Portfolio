@@ -228,8 +228,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Saadi** - AI/ML Engineer & Full-Stack Developer
 
-- 🌐 **Portfolio**: [Live Demo](http://localhost:3000)
-- 💼 **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+- 🌐 **Portfolio**: [Live Demo](https://portfolio-deployed-pi.vercel.app/)
+- 💼 **LinkedIn**: [linkedin.com/in/saad-chattha-568901263](https://www.linkedin.com/in/saad-chattha-568901263/)
 - 🐙 **GitHub**: [github.com/saadi-js](https://github.com/saadi-js)
 - 📧 **Email**: your.email@example.com
 

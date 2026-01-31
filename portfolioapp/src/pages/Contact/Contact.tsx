@@ -462,7 +462,7 @@ const Contact: React.FC = () => {
               <SocialLink href="https://github.com/saadi-js" target="_blank">
                 🐙 GitHub
               </SocialLink>
-              <SocialLink href="https://linkedin.com/in/your-profile" target="_blank">
+              <SocialLink href="https://www.linkedin.com/in/saad-chattha-568901263/" target="_blank">
                 💼 LinkedIn
               </SocialLink>
               <SocialLink href="mailto:your.email@example.com">

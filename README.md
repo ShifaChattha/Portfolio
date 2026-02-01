@@ -232,7 +232,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 🌐 **Portfolio**: [Live Demo](https://portfolio-deployed-pi.vercel.app/)
 - 💼 **LinkedIn**: [linkedin.com/in/saad-chattha-568901263](https://www.linkedin.com/in/saad-chattha-568901263/)
 - 🐙 **GitHub**: [github.com/saadi-js](https://github.com/saadi-js)
-- 📧 **Email**: your.email@example.com
+- 📧 **Email**: saadchattha77@gmail.com
 
 ---
 

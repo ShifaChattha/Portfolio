@@ -252,6 +252,22 @@ const QuickContactText = styled.p`
   opacity: 0.9;
 `;
 
+const QuickContactEmail = styled.div`
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: ${props => props.theme.spacing.md};
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: ${props => props.theme.borderRadius.md};
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+`;
+
 const QuickContactButton = styled.a`
   display: inline-block;
   background: rgba(255, 255, 255, 0.2);
@@ -391,7 +407,7 @@ const Contact: React.FC = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="your.email@example.com"
+                placeholder="saadchattha77@gmail.com"
                 hasError={!!formErrors.email}
                 required
                 aria-invalid={!!formErrors.email}
@@ -465,7 +481,7 @@ const Contact: React.FC = () => {
               <SocialLink href="https://www.linkedin.com/in/saad-chattha-568901263/" target="_blank">
                 💼 LinkedIn
               </SocialLink>
-              <SocialLink href="mailto:your.email@example.com">
+              <SocialLink href="mailto:saadchattha77@gmail.com">
                 📧 Email
               </SocialLink>
             </SocialLinks>
@@ -477,9 +493,9 @@ const Contact: React.FC = () => {
               Prefer a quick conversation? Feel free to schedule a call or 
               reach out directly.
             </QuickContactText>
-            <QuickContactButton href="mailto:your.email@example.com">
-              Get In Touch
-            </QuickContactButton>
+            <QuickContactEmail>
+              📧 saadchattha77@gmail.com
+            </QuickContactEmail>
           </QuickContact>
         </ContactInfo>
       </ContactContent>

@@ -186,6 +186,55 @@ const SocialLink = styled.a`
   }
 `;
 
+const EmailContact = styled.div`
+  margin-top: ${props => props.theme.spacing.lg};
+  text-align: center;
+  opacity: 0;
+  ${staggeredFadeIn(3)};
+`;
+
+const EmailText = styled.p`
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  margin-bottom: ${props => props.theme.spacing.sm};
+`;
+
+const EmailAddress = styled.div`
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: ${props => props.theme.spacing.sm} ${props => props.theme.spacing.md};
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: ${props => props.theme.borderRadius.md};
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Courier New', monospace;
+  
+  /* Typewriter animation like skills section */
+  overflow: hidden;
+  border-right: 3px solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: ${typewriter} 2.5s steps(21, end) forwards, 
+             blinkCursor 0.75s step-end 3s infinite;
+  width: 0;
+  
+  &:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  @keyframes blinkCursor {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+  }
+`;
+
 const Home: React.FC = () => {
   const navigate = useNavigate();
   const [currentRole, setCurrentRole] = useState(0);
@@ -260,10 +309,23 @@ const Home: React.FC = () => {
             <SocialLink href="https://www.linkedin.com/in/saad-chattha-568901263/" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
               💼
             </SocialLink>
-            <SocialLink href="mailto:your.email@example.com" title="Email Contact">
-              📧
-            </SocialLink>
           </SocialLinks>
+          
+          <EmailContact>
+            <EmailText>💌 Get in touch:</EmailText>
+            <EmailAddress 
+              onClick={(e) => {
+                e.preventDefault();
+                navigator.clipboard.writeText("saadchattha77@gmail.com").then(() => {
+                  alert("Email copied to clipboard: saadchattha77@gmail.com");
+                }).catch(() => {
+                  alert("Email: saadchattha77@gmail.com");
+                });
+              }}
+            >
+              saadchattha77@gmail.com
+            </EmailAddress>
+          </EmailContact>
         </aside>
       </HeroContent>
       <div id="projects-description" style={{position: 'absolute', left: '-9999px'}}>Navigate to projects page to view portfolio work</div>

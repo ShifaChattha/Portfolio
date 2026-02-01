@@ -313,12 +313,6 @@ const Header: React.FC = () => {
               >
                 <SocialIcon platform="linkedin" size={20} />
               </SocialLink>
-              <SocialLink 
-                href="mailto:your.email@example.com" 
-                title="Email"
-              >
-                <SocialIcon platform="email" size={20} />
-              </SocialLink>
             </SocialLinks>
             <DarkModeToggle />
           </HeaderActions>

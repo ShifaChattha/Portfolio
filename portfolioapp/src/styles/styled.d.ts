@@ -15,11 +15,16 @@ declare module 'styled-components' {
       surface: string;
       text: string;
       textLight: string;
+      textSecondary: string;
       textInverse: string;
       border: string;
+      accent: string;
+      muted: string;
       gradients: {
         primary: string;
         secondary: string;
+        hero: string;
+        subtle: string;
       };
     };
     breakpoints: {

@@ -115,7 +115,7 @@ const Input = styled.input<{ hasError?: boolean }>`
   &:focus {
     outline: none;
     border-color: ${props => props.hasError ? '#dc3545' : props.theme.colors.primary};
-    box-shadow: 0 0 0 3px ${props => props.hasError ? 'rgba(220, 53, 69, 0.1)' : 'rgba(102, 126, 234, 0.1)'};
+    box-shadow: 0 0 0 3px ${props => props.hasError ? 'rgba(220, 53, 69, 0.1)' : 'rgba(74, 111, 165, 0.1)'};
     transform: translateY(-2px);
   }
 
@@ -140,7 +140,7 @@ const TextArea = styled.textarea<{ hasError?: boolean }>`
   &:focus {
     outline: none;
     border-color: ${props => props.hasError ? '#dc3545' : props.theme.colors.primary};
-    box-shadow: 0 0 0 3px ${props => props.hasError ? 'rgba(220, 53, 69, 0.1)' : 'rgba(102, 126, 234, 0.1)'};
+    box-shadow: 0 0 0 3px ${props => props.hasError ? 'rgba(220, 53, 69, 0.1)' : 'rgba(74, 111, 165, 0.1)'};
     transform: translateY(-2px);
   }
 
@@ -172,7 +172,7 @@ const SubmitButton = styled.button<{ $isSubmitting: boolean }>`
 
   &:hover:not(:disabled) {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 10px 25px rgba(74, 111, 165, 0.4);
   }
 
   &:disabled {
@@ -230,7 +230,7 @@ const SocialLink = styled.a`
   
   &:hover {
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 8px 20px rgba(74, 111, 165, 0.3);
   }
 `;
 

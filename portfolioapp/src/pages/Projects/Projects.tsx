@@ -114,20 +114,6 @@ const ProjectImage = styled.div<{ bgImage?: string }>`
   }
 `;
 
-const ProjectBadge = styled.div`
-  position: absolute;
-  top: ${props => props.theme.spacing.sm};
-  right: ${props => props.theme.spacing.sm};
-  background: ${props => props.theme.colors.surface};
-  padding: 4px 8px;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: ${props => props.theme.colors.primary};
-  backdrop-filter: blur(10px);
-  border: 1px solid ${props => props.theme.colors.border};
-`;
-
 const ProjectContent = styled.div`
   padding: ${props => props.theme.spacing.lg};
 `;
@@ -397,7 +383,6 @@ const Projects: React.FC = () => {
               <ProjectImage bgImage={project.image}>
                 {!project.image && `${project.title} Preview`}
               </ProjectImage>
-              <ProjectBadge>{project.status}</ProjectBadge>
             </ProjectImageContainer>
             <ProjectContent>
               <ProjectHeader>

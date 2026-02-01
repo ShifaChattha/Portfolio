@@ -178,7 +178,7 @@ const MobileMenu = styled.div<{ $isOpen: boolean }>`
   top: 70px;
   left: 0;
   right: 0;
-  background: rgba(102, 126, 234, 0.98);
+  background: rgba(74, 111, 165, 0.98);
   backdrop-filter: blur(10px);
   padding: ${props => props.theme.spacing.lg};
   transform: ${props => props.$isOpen ? 'translateY(0)' : 'translateY(-100%)'};
@@ -269,7 +269,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <a href="#main-content" style={{position: 'absolute', left: '-9999px', zIndex: 1002, color: 'white', padding: '8px', background: '#667EEA', textDecoration: 'none'}} 
+      <a href="#main-content" style={{position: 'absolute', left: '-9999px', zIndex: 1002, color: 'white', padding: '8px', background: '#4a6fa5', textDecoration: 'none'}} 
          onFocus={(e) => e.currentTarget.style.left = '8px'} 
          onBlur={(e) => e.currentTarget.style.left = '-9999px'}>
         Skip to main content

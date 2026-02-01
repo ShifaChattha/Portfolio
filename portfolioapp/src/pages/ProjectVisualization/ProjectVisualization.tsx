@@ -167,7 +167,7 @@ const GalleryTitle = styled.h3`
     color: ${props => props.theme.colors.textLight};
     margin-left: ${props => props.theme.spacing.sm};
     padding: 4px 8px;
-    background: rgba(102, 126, 234, 0.1);
+    background: rgba(74, 111, 165, 0.1);
     border-radius: ${props => props.theme.borderRadius.sm};
     font-weight: 400;
   }
@@ -248,7 +248,7 @@ const ImageWrapper = styled.div<{
   
   ${props => props.isHovered && `
     transform: scale(4.0) translateY(-50px);
-    box-shadow: 0 80px 160px rgba(102, 126, 234, 0.8), 
+    box-shadow: 0 80px 160px rgba(74, 111, 165, 0.8), 
                 0 40px 80px rgba(0, 0, 0, 0.6),
                 inset 0 2px 0 rgba(255, 255, 255, 0.3);
     border-color: ${props.theme.colors.primary};
@@ -267,9 +267,9 @@ const ImageWrapper = styled.div<{
     right: 0;
     bottom: 0;
     background: linear-gradient(45deg, 
-      rgba(102, 126, 234, 0.1) 0%, 
-      rgba(118, 75, 162, 0.1) 50%,
-      rgba(240, 147, 251, 0.1) 100%
+      rgba(74, 111, 165, 0.1) 0%, 
+      rgba(122, 139, 153, 0.1) 50%,
+      rgba(143, 164, 179, 0.1) 100%
     );
     opacity: 0;
     transition: opacity 0.3s ease;

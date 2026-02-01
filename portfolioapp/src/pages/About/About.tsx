@@ -208,7 +208,7 @@ const SkillTag = styled.span`
   
   &:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 8px rgba(74, 111, 165, 0.3);
   }
 `;
 
@@ -249,7 +249,7 @@ const ContactButton = styled.button`
   
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 8px 25px rgba(74, 111, 165, 0.4);
   }
 `;
 

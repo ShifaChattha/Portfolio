@@ -15,14 +15,26 @@ const HomeContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
+  background: ${props => props.theme.colors.gradients.hero};
   background-size: 400% 400%;
-  animation: ${gradientShift} 15s ease infinite;
+  animation: ${gradientShift} 20s ease infinite;
   color: white;
   text-align: center;
   padding: ${props => props.theme.spacing.lg};
   position: relative;
   overflow: hidden;
+  
+  /* Subtle overlay for better text readability */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
 `;
 
 const BackgroundElements = styled.div`
@@ -32,6 +44,7 @@ const BackgroundElements = styled.div`
   right: 0;
   bottom: 0;
   pointer-events: none;
+  z-index: 2;
   
   &::before {
     content: '';
@@ -40,9 +53,10 @@ const BackgroundElements = styled.div`
     left: -10%;
     width: 200px;
     height: 200px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 50%;
     animation: ${floatAnimation} 6s ease-in-out infinite;
+    filter: blur(1px);
   }
   
   &::after {
@@ -52,15 +66,16 @@ const BackgroundElements = styled.div`
     right: -10%;
     width: 300px;
     height: 300px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.03);
     border-radius: 50%;
     animation: ${floatAnimation} 8s ease-in-out infinite reverse;
+    filter: blur(2px);
   }
 `;
 
 const HeroContent = styled.div`
   max-width: 900px;
-  z-index: 2;
+  z-index: 3;
   position: relative;
 `;
 

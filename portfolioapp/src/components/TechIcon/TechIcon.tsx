@@ -118,8 +118,14 @@ const socialIconMap = {
 };
 
 export const TechIcon: React.FC<TechIconProps> = ({ tech, size = 20, className }) => {
-  // For now, return the tech name until we fix the icon typing
-  return <span className={className} style={{ fontSize: `${size}px` }}>{tech}</span>;
+  const IconComponent = techIconMap[tech];
+  
+  if (IconComponent) {
+    return <IconComponent size={size} className={className} />;
+  }
+  
+  // Fallback for techs without specific icons
+  return <span className={className} style={{ fontSize: `${size}px` }}>⚡</span>;
 };
 
 export const SocialIcon: React.FC<{ platform: string; size?: number; className?: string }> = ({ 

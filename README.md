@@ -2,13 +2,13 @@
 
 A modern, responsive portfolio website showcasing AI/ML engineering projects and web development expertise. Built with React, TypeScript, and styled-components featuring a comprehensive dark/light theme system.
 
-![Portfolio Preview](https://via.placeholder.com/800x400/667eea/ffffff?text=Portfolio+Preview)
+![Portfolio Preview](https://via.placeholder.com/800x400/4a6fa5/ffffff?text=Portfolio+Preview)
 
 ## ✨ Features
 
 ### 🎨 Design & UX
 - **Responsive Design**: Fully responsive across all devices (mobile, tablet, desktop)
-- **Dark/Light Mode**: Complete theme system with smooth transitions
+- **Professional Theme System**: Elegant dark/light mode with sophisticated color palette
 - **Modern Animations**: Smooth fade-ins, hover effects, and interactive elements
 - **Accessibility**: ARIA labels, keyboard navigation, and screen reader support
 
@@ -20,10 +20,10 @@ A modern, responsive portfolio website showcasing AI/ML engineering projects and
 - **Code Splitting**: Optimized bundle loading
 
 ### 📱 Interactive Components
-- **Project Gallery**: Interactive project cards with hover effects
+- **Project Gallery**: Clean project cards with professional styling
 - **Modal System**: Smooth project visualization modals
 - **Contact Form**: Functional contact form with validation
-- **Tech Stack Icons**: Dynamic technology icons with fallbacks
+- **Tech Stack Icons**: Dynamic technology icons with proper React Icons integration
 - **Mobile Menu**: Responsive navigation system
 
 ## 🛠️ Tech Stack
@@ -142,22 +142,23 @@ portfolioapp/
 
 ## 🎨 Theme System
 
-The portfolio features a comprehensive theme system with:
+The portfolio features a sophisticated theme system with:
 
 ### Light Theme
-- Clean, professional white backgrounds
-- High contrast text for readability
-- Vibrant accent colors
+- Professional blue-gray color palette
+- Clean surface colors and elegant gradients
+- Optimal contrast ratios for accessibility
 
 ### Dark Theme
-- Modern dark backgrounds (#121212)
-- Soft text colors for eye comfort
-- Consistent color hierarchy
+- Deep, sophisticated backgrounds (#0f1419, #1a202c)
+- Refined light text colors for comfortable viewing
+- Consistent professional color hierarchy
 
 ### Theme Features
 - **System Preference Detection**: Automatically detects user's system preference
 - **Persistent Storage**: Remembers user's theme choice
 - **Smooth Transitions**: Animated theme switching
+- **Professional Gradients**: Subtle, mature color transitions
 - **Component Integration**: All components respect theme colors
 
 ## 📱 Responsive Design

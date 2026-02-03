@@ -52,7 +52,7 @@ const ProfileImage = styled.div`
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  background-image: url('/assets/pfp.jpeg');
+  background-image: url('/assets/me1.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -254,19 +254,23 @@ const ContactButton = styled.button`
 `;
 
 const About: React.FC = () => {
-  const aiSkills = [
-    'AI & Machine Learning', 'RAG Systems', 'LangChain', 
-    'OpenAI API', 'Natural Language Processing', 'Prompt Engineering'
-  ];
   
+  const netbackendSkills = [
+  '.NET 8 / Core', 
+  'ASP.NET MVC', 
+  'Entity Framework', 
+  'LINQ & Async Programming', 
+  'SQL Server', 
+  'RESTful APIs'
+];
   const backendSkills = [
-    'Django & Python', 'AI Chatbots', 'Vector Databases', 
-    'Django REST Framework', 'MySQL & SQLite', 'MongoDB'
+    'Django & Python', 'AI Chatbots', 
+    'Django REST Framework', 'MySQL & SQLite'
   ];
   
   const toolsSkills = [
     'Git & GitHub', 'Flutter & Dart', 'HTML5 & CSS3', 
-    'JavaScript', 'SharedPreferences', 'Cross-platform Development'
+    'JavaScript',  'Cross-platform Development'
   ];
 
   const handleContactClick = () => {
@@ -282,15 +286,15 @@ const About: React.FC = () => {
           <QuickStats>
             <StatCard>
               <StatNumber>4+</StatNumber>
-              <StatLabel>AI Projects</StatLabel>
+              <StatLabel>Projects</StatLabel>
             </StatCard>
             <StatCard>
               <StatNumber>3+</StatNumber>
               <StatLabel>Years</StatLabel>
             </StatCard>
             <StatCard>
-              <StatNumber>AI/ML</StatNumber>
-              <StatLabel>Specialist</StatLabel>
+              <StatNumber>Full Stack Developer</StatNumber>
+              {/* <StatLabel>Specialist</StatLabel> */}
             </StatCard>
             <StatCard>
               <StatNumber>100%</StatNumber>
@@ -303,10 +307,7 @@ const About: React.FC = () => {
           <Section>
             <SectionTitle>Who I Am</SectionTitle>
             <Paragraph>
-              I'm Saadi, an AI Engineer and Django developer specializing in building intelligent 
-              applications that leverage cutting-edge AI technologies. My expertise spans from 
-              developing RAG systems and LangChain implementations to creating sophisticated 
-              AI-powered chatbots and machine learning solutions.
+              I'm Shifa, a Full-Stack Developer specializing in Django and .NET Core. I build scalable backend architectures and intelligent web solutions that bridge the gap between robust enterprise logic and modern AI capabilities..
             </Paragraph>
             <Paragraph>
               I combine deep AI knowledge with robust backend development skills, creating everything 
@@ -317,40 +318,33 @@ const About: React.FC = () => {
 
           <HighlightBox>
             <HighlightText>
-              "I believe in harnessing the power of AI to create intelligent, adaptive solutions. 
-              Whether it's implementing RAG systems, building LangChain workflows, or developing 
-              AI-driven applications, I focus on creating meaningful AI experiences."
+              Expert in Django and .NET development, dedicated to creating scalable backend systems and intelligent applications. I focus on building high-performance solutions that leverage the best of both Python and C# ecosystems.
             </HighlightText>
           </HighlightBox>
 
           <Section>
             <SectionTitle>What I Do</SectionTitle>
             <Paragraph>
-              As an AI Engineer, I specialize in developing intelligent systems using modern AI frameworks 
-              like LangChain for building complex AI workflows, implementing RAG (Retrieval Augmented Generation) 
-              systems for enhanced AI responses, and creating sophisticated chatbots with OpenAI integration.
+              I believe in building robust, scalable backend systems that power modern digital experiences. Whether it's architecting enterprise-level APIs with .NET or developing rapid, data-driven web applications with Django, I focus on writing clean, efficient code that delivers real value
+              
             </Paragraph>
-            <Paragraph>
-              On the development side, I build robust Django applications that seamlessly integrate 
-              AI capabilities, from intelligent chatbots and recommendation systems to advanced 
-              natural language processing solutions that enhance user experiences.
-            </Paragraph>
+            
           </Section>
         </TextSection>
       </Content>
 
       <SkillsContainer>
         <SkillCategory>
-          <CategoryTitle>AI & Machine Learning</CategoryTitle>
+          <CategoryTitle>.Net Development</CategoryTitle>
           <SkillsList>
-            {aiSkills.map((skill, index) => (
+            {netbackendSkills.map((skill, index) => (
               <SkillTag key={index}>{skill}</SkillTag>
             ))}
           </SkillsList>
         </SkillCategory>
 
         <SkillCategory>
-          <CategoryTitle>Backend & AI Development</CategoryTitle>
+          <CategoryTitle>Django Development</CategoryTitle>
           <SkillsList>
             {backendSkills.map((skill, index) => (
               <SkillTag key={index}>{skill}</SkillTag>
@@ -370,8 +364,7 @@ const About: React.FC = () => {
 
       <ContactCTA>
         <ContactButton onClick={handleContactClick}>
-          Let's Build AI Solutions Together
-        </ContactButton>
+Let's Build Backend Solutions Together        </ContactButton>
       </ContactCTA>
     </AboutContainer>
   );

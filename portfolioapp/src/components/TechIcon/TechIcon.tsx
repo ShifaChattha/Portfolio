@@ -1,4 +1,9 @@
 import React from 'react';
+// Add this to your Font Awesome imports at the top
+import { FaCode } from 'react-icons/fa';
+import { DiDatabase } from 'react-icons/di'; // Professional Database Cylinder
+// OR
+// import { SiMicrosoft } from 'react-icons/si'; // If you prefer the Microsoft Windows/Brand logo
 import { 
   FaReact, 
   FaNodeJs, 
@@ -10,6 +15,7 @@ import {
   FaGitAlt, 
   FaGithub, 
   FaLinkedin,
+   FaEye ,
   FaEnvelope
 } from 'react-icons/fa';
 import { 
@@ -36,15 +42,24 @@ import {
   SiGooglecloud,
   SiFirebase,
   SiVercel,
+  SiOpencv,
+  SiDotnet, 
+  SiSharp,    
+  SiRazorpay,
   SiNetlify
 } from 'react-icons/si';
 import { DiDart, DiAws } from 'react-icons/di';
-
+const techIconMap1: Record<string, any> = {
+  // ... other icons ...
+  'Web API': FaCode,
+  'REST API': FaCode, // Optional: add a variation in case you use this name later
+};
 interface TechIconProps {
   tech: string;
   size?: number;
   className?: string;
 }
+
 
 const techIconMap: Record<string, any> = {
   // Frontend
@@ -75,6 +90,7 @@ const techIconMap: Record<string, any> = {
   'MySQL': SiMysql,
   'SQLite': SiSqlite,
   'PostgreSQL': SiPostgresql,
+  'SQL Server': DiDatabase,
 
   // AI/ML
   'OpenAI API': SiOpenai,
@@ -107,7 +123,15 @@ const techIconMap: Record<string, any> = {
   'AI Analytics': SiOpenai,
   'Vanilla JavaScript': FaJsSquare,
   'Vector Databases': SiMongodb,
-  'OpenAI Embeddings': SiOpenai
+  'OpenAI Embeddings': SiOpenai,
+  'OpenCV': SiOpencv,
+  'Computer Vision': SiOpencv,
+  '.NET': SiDotnet,
+  'C#': SiSharp,
+  // 'SQL Server': SiMicrosoftexchange,
+  'Entity Framework': SiDotnet,
+  'Razorpay API': SiRazorpay,
+  'Web API': FaCode
 };
 
 const socialIconMap = {

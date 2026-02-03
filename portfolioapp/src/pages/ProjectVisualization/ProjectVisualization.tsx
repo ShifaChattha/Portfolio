@@ -157,7 +157,7 @@ const GalleryTitle = styled.h3`
   gap: ${props => props.theme.spacing.xs};
   
   &::before {
-    content: '📸';
+    // content: '📸';
     font-size: 1.2em;
   }
   
@@ -402,25 +402,30 @@ const CloseButton = styled.button`
   position: absolute;
   top: 20px;
   right: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: none;
-  width: 50px;
-  height: 50px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  color: white; /* Icon will stay white but on a dark circle */
+  border: 2px solid rgba(255, 255, 255, 0.8); /* Light border for visibility */
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px); /* Background blur effect */
   transition: all 0.3s ease;
+  z-index: 10001; /* Image se upar rakhne ke liye */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Button ko image se 'upr' uthane ke liye shadow */
   
   &:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(1.1);
+    background: ${props => props.theme.colors.primary}; /* Hover pe blue/primary color */
+    transform: scale(1.1) rotate(90deg); /* Thora sa rotate effect */
+    border-color: white;
   }
 `;
+
 
 interface ProjectData {
   id: number;
@@ -433,51 +438,45 @@ interface ProjectData {
 }
 
 const projectData: Record<string, ProjectData> = {
-  'etapsai': {
+  
+  'nars-ai': {
     id: 1,
-    title: 'EtapsAI',
-    description: 'An intelligent e-commerce chatbot platform integrating OpenAI GPT-4o-mini with Django, featuring RAG systems, intent classification, and advanced NLP capabilities.',
-    techStack: ['Django', 'Python', 'OpenAI API', 'LangChain', 'RAG', 'MySQL', 'MongoDB', 'NLP'],
-    images: ['/assets/Ecommerce/Ecommerce-1.png', '/assets/Ecommerce/Ecommerce-2.png', '/assets/Ecommerce/Ecommerce-3.png', '/assets/Ecommerce/Ecommerce-4.png', '/assets/Ecommerce/Ecommerce-5.png', '/assets/Ecommerce/Ecommerce-6.png'],
-    githubUrl: 'https://github.com/saadi-js/Ecommerce-DataBase-Assistant-Complete-djangoAPP',
+    title: 'NARS AI Beauty Assistant',
+    description: 'A specialized AI chatbot for NARS Cosmetics that assists users with product discovery and makeup queries using NLP to understand user intent and retrieve real-time data.',
+    techStack: ['Django', 'Python', 'OpenAI API', 'MySQL', 'NLP', 'JavaScript'],
+    // images: ['portfolio\portfolioapp\public\assets\FaceReco\Screenshot (147).png', 'C:\Users\hp\Desktop\clone portfoio\portfolio\portfolioapp\public\assets\FaceReco\Screenshot (148).png', 'C:\Users\hp\Desktop\clone portfoio\portfolio\portfolioapp\public\assets\FaceReco\Screenshot (150).png', '/assets/Palessi/Palessi-5.png', '/assets/Palessi/Palessi-6.png', '/assets/Palessi/Palessi-7.png', '/assets/Palessi/Palessi-8.png', '/assets/Palessi/Palessi-9.png', '/assets/Palessi/Palessi-10.png', '/assets/Palessi/Palessi-11.png'],
+    images: ['/assets/NarsChat/n1.jpg', '/assets/NarsChat/n2.jpg','/assets/NarsChat/n3.jpg','/assets/NarsChat/n4.jpg'],
+    githubUrl: 'https://github.com/ShifaChattha/ChatBotAssistant',
     demoUrl: '#'
   },
-  'palessi': {
+  'furniture-erp': {
     id: 2,
-    title: 'PALESSI',
-    description: 'A comprehensive Django-based e-commerce platform featuring AI-powered recommendations, user authentication, and intelligent product management system.',
-    techStack: ['Django', 'Python', 'SQLite', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'Machine Learning'],
-    images: ['/assets/Palessi/Palessi-1.png', '/assets/Palessi/Palessi-2.png', '/assets/Palessi/Palessi-4.png', '/assets/Palessi/Palessi-5.png', '/assets/Palessi/Palessi-6.png', '/assets/Palessi/Palessi-7.png', '/assets/Palessi/Palessi-8.png', '/assets/Palessi/Palessi-9.png', '/assets/Palessi/Palessi-10.png', '/assets/Palessi/Palessi-11.png'],
-    githubUrl: 'https://github.com/saadi-js/PALESSI',
+    title: 'Furniture ERP',
+    description: 'A robust .NET e-commerce ecosystem for furniture retail featuring a Database-First approach and a sophisticated Role-Based Access Control (RBAC) system.',
+    techStack: ['.NET', 'C#', 'SQL Server', 'Entity Framework', 'Web API', 'JavaScript', 'Bootstrap'],
+    images: ['/assets/Furni/Screenshot (124).png','/assets/Furni/Screenshot (116).png ','/assets/Furni/Screenshot (117).png','/assets/Furni/Screenshot (125).png','/assets/Furni/Screenshot (128).png','/assets/Furni/Screenshot (129).png','/assets/Furni/Screenshot (119).png','/assets/Furni/Screenshot (120).png','/assets/Furni/Screenshot (121).png'],
+    githubUrl: 'https://github.com/ShifaChattha/Furniture_ecommerce_website',
     demoUrl: '#'
   },
-  'amazon-clone': {
+  'pinterest-clone': {
     id: 3,
-    title: 'Amazon Clone',
-    description: 'A pixel-perfect Amazon clone built with vanilla JavaScript, featuring 68+ products, advanced search, cart management, and authentic Amazon UI/UX design.',
+    title: 'Pinterest Clone',
+    description: 'A visually-driven social discovery platform built with vanilla JavaScript, featuring a dynamic masonry-style grid layout and session persistence via LocalStorage.',
     techStack: ['HTML5', 'CSS3', 'Vanilla JavaScript', 'Font Awesome', 'XML Data', 'Local Storage'],
-    images: ['/assets/Amazon/Amazon-1.png', '/assets/Amazon/Amazon-4.png', '/assets/Amazon/Amazon-5.png', '/assets/Amazon/Amazon-6.png', '/assets/Amazon/Amazon-7.png', '/assets/Amazon/Amazon-8.png', '/assets/Amazon/Amazon-9.png', '/assets/Amazon/Amazon-10.png', '/assets/Amazon/Amazon-11.png', '/assets/Amazon/Amazon-12.png'],
-    githubUrl: 'https://github.com/saadi-js/Amazon-Clone',
+    images: ['/assets/pint/p1.jpg','/assets/pint/p2.jpg','/assets/pint/p3.jpg', '/assets/pint/p4.jpg','/assets/pint/p5.jpg','/assets/pint/p6.jpg','/assets/pint/p7.jpg','/assets/pint/p8.jpg','/assets/pint/p9.jpg','/assets/pint/p10.jpg' ,'/assets/pint/p11.jpg','/assets/pint/p12.jpg','/assets/pint/p13.jpg', '/assets/pint/p14.jpg','/assets/pint/p15.jpg','/assets/pint/p16.jpg','/assets/pint/p17.jpg','/assets/pint/p18.jpg','/assets/pint/p19.jpg','/assets/pint/p20.jpg','/assets/pint/p7.jpg'],
+    githubUrl: 'https://github.com/ShifaChattha/pinterest-frontend-clone',
     demoUrl: '#'
   },
-  'smart-rag-assistant': {
+  'cineface-recognition': {
     id: 4,
-    title: 'Smart RAG Assistant',
-    description: 'An advanced Retrieval Augmented Generation system built with LangChain and Django, providing intelligent document search and context-aware responses.',
-    techStack: ['LangChain', 'Django', 'Vector Databases', 'OpenAI Embeddings', 'Python', 'RAG', 'NLP'],
-    images: ['/assets/Ecommerce/Ecommerce-1.png', '/assets/Ecommerce/Ecommerce-2.png', '/assets/Ecommerce/Ecommerce-3.png', '/assets/Ecommerce/Ecommerce-4.png', '/assets/Ecommerce/Ecommerce-5.png', '/assets/Ecommerce/Ecommerce-6.png'],
-    githubUrl: 'https://github.com/saadi-js/Ecommerce-DataBase-Assistant-Complete-djangoAPP',
-    demoUrl: '#'
-  },
-  'trackwise': {
-    id: 5,
-    title: 'TrackWise',
-    description: 'A Flutter expense tracker with AI-powered spending insights, intelligent categorization, and machine learning-based budget recommendations.',
-    techStack: ['Flutter', 'Dart', 'Machine Learning', 'SharedPreferences', 'AI Analytics'],
-    images: ['/assets/Trackwise/Trackwise-1.jpeg', '/assets/Trackwise/Trackwise-2.jpeg', '/assets/Trackwise/Trackwise-3.jpeg', '/assets/Trackwise/Trackwise-4.jpeg', '/assets/Trackwise/Trackwise-5.jpeg', '/assets/Trackwise/Trackwise-6.jpeg', '/assets/Trackwise/Trackwise-7.jpeg', '/assets/Trackwise/Trackwise-8.jpeg'],
-    githubUrl: 'https://github.com/saadi-js/Flutter_app',
+    title: 'CineFace Recognition',
+    description: 'A Python-based facial recognition system using OpenCV to identify famous actors in real-time by detecting, aligning, and matching faces against trained datasets.',
+    techStack: ['Python', 'OpenCV', 'NumPy', 'AI/ML', 'Computer Vision'],
+    images: ['/assets/FaceReco/Screenshot (147).png', '/assets/FaceReco/Screenshot (148).png', '/assets/FaceReco/Screenshot (150).png', '/assets/FaceReco/Screenshot (145).png', '/assets/FaceReco/Screenshot (146).png', '/assets/FaceReco/Screenshot (143).png'],
+    githubUrl: 'https://github.com/ShifaChattha/celebrity-face-recognition-cv',
     demoUrl: '#'
   }
+
 };
 
 const ProjectVisualization: React.FC = () => {
@@ -556,6 +555,7 @@ const ProjectVisualization: React.FC = () => {
 
       <ImageGallery>
         <GalleryTitle>Project Gallery</GalleryTitle>
+        
         <CascadingContainer>
           {project.images.map((image, index) => (
             <ImageWrapper
@@ -593,11 +593,11 @@ const ProjectVisualization: React.FC = () => {
 
       <ActionButtons>
         <ActionButton href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-          🔗 GitHub Repository
+           GitHub Repository
         </ActionButton>
-        <ActionButton href={project.demoUrl} className="secondary">
-          🚀 Live Demo
-        </ActionButton>
+        {/* <ActionButton href={project.demoUrl} className="secondary">
+          Live Demo
+        </ActionButton> */}
       </ActionButtons>
       
       <ModalOverlay 

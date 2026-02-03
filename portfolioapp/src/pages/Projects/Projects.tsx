@@ -247,104 +247,86 @@ const Projects: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
   const projects: Project[] = [
+   {
+  id: 1,
+  title: "NARS AI Beauty Assistant",
+  type: "AI E-commerce Solution",
+  category: "AI/ML",
+  description: "A specialized AI chatbot for NARS Cosmetics that assists users with product discovery and makeup queries. Built with Django and OpenAI, it utilizes NLP to understand user intent and retrieve real-time data from a SQL database.",
+  features: [
+    "AI-Powered Product Recommendations",
+    "Natural Language Processing (NLP) for Beauty Queries",
+    "Real-time SQL Database Synchronization",
+    "OpenAI GPT-4o API Integration",
+    "Intent Classification for Customer Support",
+    "Responsive Chat Interface with Django Backend"
+  ],
+  techStack: ["Django", "Python", "OpenAI API", "MySQL", "NLP", "JavaScript"],
+  githubUrl: "https://github.com/ShifaChattha/ChatBotAssistant", // Updated to your username
+  visualizationUrl: "/projects/nars-ai",
+  status: "Complete"
+},
     {
-      id: 1,
-      title: "EtapsAI",
-      type: "AI Chatbot",
-      category: "AI/ML",
-      description: "An intelligent e-commerce chatbot platform integrating OpenAI GPT-4o-mini with Django, featuring RAG systems, intent classification, and advanced NLP capabilities.",
-      features: [
-        "RAG System Implementation",
-        "LangChain Integration",
-        "OpenAI GPT-4o-mini API",
-        "Intent Classification",
-        "Real-time Chat Interface",
-        "Dual Database Architecture"
-      ],
-      techStack: ["Django", "Python", "OpenAI API", "LangChain", "RAG", "MySQL", "MongoDB", "NLP"],
-      githubUrl: "https://github.com/saadi-js/Ecommerce-DataBase-Assistant-Complete-djangoAPP",
-      visualizationUrl: "/projects/etapsai",
-      status: "Production"
-    },
+  id: 2,
+  title: "Furniture ERP",
+  type: "E-Commerce Website",
+  category: "Full Stack Development",
+  description: "A robust .NET e-commerce ecosystem for furniture retail, developed using a Database-First approach. Features a sophisticated Role-Based Access Control (RBAC) system for administrators, content writers, and stock managers.",
+  features: [
+    "Database-First Architecture with Entity Framework",
+    "Role-Based Access Control (Admin, Writer, Stock Manager)",
+    "Inventory & Stock Management Module",
+    "Product Lifecycle Management for Content Writers",
+    "Secure Checkout & Order Processing",
+    "SQL Server Integration for Complex Data Relations"
+  ],
+  techStack: [".NET", "C#", "SQL Server", "Entity Framework", "Web API", "JavaScript", "Bootstrap"],
+  githubUrl: "https://github.com/ShifaChattha/Furniture_ecommerce_website",
+  visualizationUrl: "/projects/furniture-erp",
+  status: "Production"
+},
     {
-      id: 2,
-      title: "PALESSI",
-      type: "E-Commerce",
-      category: "Web Development",
-      description: "A comprehensive Django-based e-commerce platform featuring AI-powered recommendations, user authentication, and intelligent product management system.",
-      features: [
-        "AI Product Recommendations",
-        "User Authentication & Authorization", 
-        "Shopping Cart & Checkout",
-        "Order Management System",
-        "Django Admin Panel",
-        "Intelligent Search"
-      ],
-      techStack: ["Django", "Python", "SQLite", "HTML5", "CSS3", "JavaScript", "Bootstrap", "Machine Learning"],
-      githubUrl: "https://github.com/saadi-js/PALESSI",
-      visualizationUrl: "/projects/palessi",
-      status: "Production"
-    },
-    {
-      id: 3,
-      title: "Amazon Clone",
-      type: "E-Commerce",
-      category: "Web Development", 
-      description: "A pixel-perfect Amazon clone built with vanilla JavaScript, featuring 68+ products, advanced search, cart management, and authentic Amazon UI/UX design.",
-      features: [
-        "68+ Products across 8 Categories",
-        "Advanced Search & Filtering",
-        "Local Storage Cart Management",
-        "Multi-step Checkout Process",
-        "Toast Notifications System",
-        "Mobile-First Responsive Design"
-      ],
-      techStack: ["HTML5", "CSS3", "Vanilla JavaScript", "Font Awesome", "XML Data", "Local Storage"],
-      githubUrl: "https://github.com/saadi-js/Amazon-Clone",
-      visualizationUrl: "/projects/amazon-clone",
-      status: "Complete"
-    },
-    {
-      id: 4,
-      title: "Smart RAG Assistant",
-      type: "AI Assistant",
-      category: "AI/ML",
-      description: "An advanced Retrieval Augmented Generation system built with LangChain and Django, providing intelligent document search and context-aware responses.",
-      features: [
-        "Document Vector Storage",
-        "Semantic Search",
-        "Context-Aware Responses",
-        "LangChain Workflows",
-        "Custom Embeddings",
-        "Multi-format Document Support"
-      ],
-      techStack: ["LangChain", "Django", "Vector Databases", "OpenAI Embeddings", "Python", "RAG", "NLP"],
-      githubUrl: "https://github.com/saadi-js/Ecommerce-DataBase-Assistant-Complete-djangoAPP",
-      visualizationUrl: "/projects/smart-rag-assistant",
-      status: "Active Development"
-    },
-    {
-      id: 5,
-      title: "TrackWise",
-      type: "Mobile App",
-      category: "Mobile Development",
-      description: "A Flutter expense tracker with AI-powered spending insights, intelligent categorization, and machine learning-based budget recommendations.",
-      features: [
-        "AI Expense Categorization",
-        "ML Budget Predictions",
-        "Intelligent Insights",
-        "Cross-Platform Support",
-        "Splitwise Integration",
-        "Smart Notifications"
-      ],
-      techStack: ["Flutter", "Dart", "Machine Learning", "SharedPreferences", "AI Analytics"],
-      githubUrl: "https://github.com/saadi-js/Flutter_app",
-      visualizationUrl: "/projects/trackwise",
-      status: "In Development"
-    }
+  id: 3,
+  title: "Pinterest Clone",
+  type: "Social Discovery Platform",
+  category: "Web Development", 
+  description: "A visually-driven Pinterest replica built with vanilla JavaScript. It features a dynamic masonry-style grid layout, image saving capabilities, and a fully responsive UI/UX designed for content discovery.",
+  features: [
+   "Custom User Authentication (Sign-up/Login logic)",
+    "Session Persistence via LocalStorage",
+    "Dynamic Image Grid & Masonry Layout",
+    "Persistent 'Pin' Saving and Board Management",
+    "Client-side Search & Content Filtering",
+    "State Management using Browser Storage"
+  ],
+  techStack: ["HTML5", "CSS3", "Vanilla JavaScript", "Font Awesome", "XML Data", "Local Storage"],
+  githubUrl: "https://github.com/ShifaChattha/pinterest-frontend-clone", // Updated to your username
+  visualizationUrl: "/projects/pinterest-clone",
+  status: "Complete"
+},
+  
+   {
+  id: 4,
+  title: "CineFace Recognition",
+  type: "Computer Vision",
+  category: "AI/ML",
+  description: "A Python-based facial recognition system using OpenCV to identify famous actors in real-time. The system process images to detect, align, and match faces against a trained dataset.",
+  features: [
+    "Real-time Face Detection & Tracking",
+    "Dataset Augmentation for Accuracy",
+    "Confidence Score Calculation",
+    "Optimized Image Pre-processing",
+    "LBPH/Eigenfaces Training Model",
+    "Haar Cascade Classifiers"
+  ],
+  techStack: ["Python", "OpenCV", "NumPy"],
+  githubUrl: "https://github.com/ShifaChattha/celebrity-face-recognition-cv", // Update with your actual repo name
+  visualizationUrl: "/projects/cineface-recognition",
+  status: "Complete"
+}
   ];
 
-  const categories = ['All', 'AI/ML', 'Web Development', 'Mobile Development'];
+  const categories = ['All', 'AI/ML', 'Web Development', 'Full Stack Development'];
   
   const filteredProjects = activeFilter === 'All' 
     ? projects 
@@ -354,14 +336,13 @@ const Projects: React.FC = () => {
     <>
       <SEO 
         title="Projects"
-        description="Showcasing AI/ML engineering and Django development projects featuring RAG systems, LangChain, and advanced machine learning applications."
-        keywords="AI Projects, Machine Learning, Django Projects, RAG Systems, LangChain, Python Projects, AI Applications"
+        description="Showcasing expertise in Django and .NET development, specializing in building scalable backend architectures, robust APIs, and high-performance enterprise applications."
+        keywords=".Net Projects, Machine Learning, Django Projects, Python Projects, AI Applications"
       />
       <ProjectsContainer>
       <Title>My Projects</Title>
       <Subtitle>
-        Showcasing my expertise in AI/ML engineering and Django development through 
-        intelligent applications featuring RAG systems, LangChain, and advanced machine learning.
+      Showcasing expertise in Django and .NET development, specializing in building scalable backend architectures, robust APIs, and high-performance enterprise applications.
       </Subtitle>
       
       <FilterContainer>
@@ -412,16 +393,35 @@ const Projects: React.FC = () => {
               </TechStack>
               
               <ProjectLinks>
+              
                 {project.githubUrl && (
-                  <ProjectLink href={project.githubUrl} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} source code on GitHub`}>
-                    🐙 Code
-                  </ProjectLink>
-                )}
-                {project.visualizationUrl && (
-                  <ProjectLink as={Link} to={project.visualizationUrl} className="secondary" aria-label={`View ${project.title} project visualization`}>
-                    👁️ Visualization
-                  </ProjectLink>
-                )}
+  <ProjectLink 
+    href={project.githubUrl} 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    aria-label={`View ${project.title} source code on GitHub`}
+  >
+    <svg height="18" width="18" viewBox="0 0 24 24" fill="currentColor" style={{ marginRight: '8px' }}>
+      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+    </svg>
+    Code
+  </ProjectLink>
+)}
+
+{project.visualizationUrl && (
+  <ProjectLink 
+    as={Link} 
+    to={project.visualizationUrl} 
+    className="secondary" 
+    aria-label={`View ${project.title} project visualization`}
+  >
+    <svg height="18" width="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '8px' }}>
+      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+      <circle cx="12" cy="12" r="3"></circle>
+    </svg>
+    Visualization
+  </ProjectLink>
+)}
               </ProjectLinks>
             </ProjectContent>
           </ProjectCard>

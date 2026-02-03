@@ -24,6 +24,8 @@ const lightTheme = {
       subtle: 'linear-gradient(135deg, #f8f9fa 0%, #e8eaed 100%)',
     }
   },
+  
+  
   breakpoints: {
     mobile: '576px',
     tablet: '768px',

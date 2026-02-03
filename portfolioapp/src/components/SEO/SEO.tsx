@@ -13,7 +13,7 @@ const SEO: React.FC<SEOProps> = ({
 }) => {
   useEffect(() => {
     // Update document title
-    const siteName = 'Saadi - AI Engineer & Django Developer Portfolio';
+    const siteName = 'Shifa-  Django & .Net Developer Portfolio';
     document.title = `${title} | ${siteName}`;
     
     // Update meta description

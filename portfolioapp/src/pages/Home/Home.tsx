@@ -244,7 +244,7 @@ const Home: React.FC = () => {
   const roles = [
     "Django Developer", 
     ".Net Developer",
-    "software Engineer", 
+    "Software Engineer", 
     "Backend Specialist"
   
   ];

@@ -293,7 +293,7 @@ const About: React.FC = () => {
               <StatLabel>Years</StatLabel>
             </StatCard>
             <StatCard>
-              <StatNumber>Full Stack Developer</StatNumber>
+              <StatNumber>Backend Developer</StatNumber>
               {/* <StatLabel>Specialist</StatLabel> */}
             </StatCard>
             <StatCard>
@@ -307,7 +307,7 @@ const About: React.FC = () => {
           <Section>
             <SectionTitle>Who I Am</SectionTitle>
             <Paragraph>
-              I'm Shifa, a Full-Stack Developer specializing in Django and .NET Core. I build scalable backend architectures and intelligent web solutions that bridge the gap between robust enterprise logic and modern AI capabilities..
+              I'm Shifa, a  Backend Developer specializing in Django and .NET Core. I build scalable backend architectures and intelligent web solutions that bridge the gap between robust enterprise logic and modern AI capabilities..
             </Paragraph>
             <Paragraph>
               I combine deep AI knowledge with robust backend development skills, creating everything 

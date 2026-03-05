@@ -289,7 +289,7 @@ const Home: React.FC = () => {
           </TypewriterContainer>
         </header>
         <Description>
-          Software Engineer and Full-Stack Developer specializing in .NET and Django. I architect scalable backend systems and robust web applications, bridging the gap between complex business logic and high-performance user experiences.
+          Software Engineer and Backend Developer specializing in .NET and Django. I architect scalable backend systems and robust web applications, bridging the gap between complex business logic and high-performance user experiences.
         </Description>
         <nav aria-label="Main actions">
           <ButtonContainer>

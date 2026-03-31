@@ -2,7 +2,8 @@
 
 A modern, responsive portfolio website showcasing AI/ML engineering projects and web development expertise. Built with React, TypeScript, and styled-components featuring a comprehensive dark/light theme system.
 
-![Portfolio Preview]("https://portfolioshifa.vercel.app/")
+
+[Portfolio Preview](https://portfolioshifa.vercel.app/)
 
 ## Features
 

@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing AI/ML engineering projects and web development expertise. Built with React, TypeScript, and styled-components featuring a comprehensive dark/light theme system.
 
-![Portfolio Preview]()
+![Portfolio Preview](https://portfolioshifa.vercel.app/)
 
 ## Features
 
@@ -118,7 +118,7 @@ portfolioapp/
 └── README.md
 ```
 
-## 🎨 Theme System
+## Theme System
 
 The portfolio features a sophisticated theme system with:
 
@@ -204,13 +204,12 @@ The portfolio features a sophisticated theme system with:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **React Community** - For the amazing ecosystem
 - **Styled Components** - For the powerful CSS-in-JS solution
 - **TypeScript** - For type safety and developer experience
 - **Create React App** - For the excellent project setup
 
----
 
 

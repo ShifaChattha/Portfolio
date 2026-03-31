@@ -1,32 +1,32 @@
-# 🚀 Saadi's Portfolio
+# Shifa's Portfolio
 
 A modern, responsive portfolio website showcasing AI/ML engineering projects and web development expertise. Built with React, TypeScript, and styled-components featuring a comprehensive dark/light theme system.
 
-![Portfolio Preview](https://via.placeholder.com/800x400/4a6fa5/ffffff?text=Portfolio+Preview)
+![Portfolio Preview]()
 
-## ✨ Features
+## Features
 
-### 🎨 Design & UX
+### Design & UX
 - **Responsive Design**: Fully responsive across all devices (mobile, tablet, desktop)
 - **Professional Theme System**: Elegant dark/light mode with sophisticated color palette
 - **Modern Animations**: Smooth fade-ins, hover effects, and interactive elements
 - **Accessibility**: ARIA labels, keyboard navigation, and screen reader support
 
-### 🏗️ Technical Features
+### Technical Features
 - **React 18.2.0**: Latest React with TypeScript for type safety
 - **Styled Components**: CSS-in-JS with theme support
 - **SEO Optimized**: Meta tags, structured data, and performance optimization
 - **Error Boundaries**: Graceful error handling
 - **Code Splitting**: Optimized bundle loading
 
-### 📱 Interactive Components
+### Interactive Components
 - **Project Gallery**: Clean project cards with professional styling
 - **Modal System**: Smooth project visualization modals
 - **Contact Form**: Functional contact form with validation
 - **Tech Stack Icons**: Dynamic technology icons with proper React Icons integration
 - **Mobile Menu**: Responsive navigation system
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React** - UI Library
@@ -44,7 +44,7 @@ A modern, responsive portfolio website showcasing AI/ML engineering projects and
 - **Git** - Version Control
 - **GitHub** - Repository Hosting
 
-## 🚦 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js (v16.0.0 or higher)
@@ -85,7 +85,7 @@ A modern, responsive portfolio website showcasing AI/ML engineering projects and
 npm run build
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 portfolioapp/
@@ -118,28 +118,6 @@ portfolioapp/
 └── README.md
 ```
 
-## 🎯 Featured Projects
-
-### 🤖 EtapsAI - AI Chatbot Platform
-- **Tech Stack**: Django, Python, OpenAI GPT-4o-mini, LangChain, RAG
-- **Features**: Intelligent e-commerce assistant with RAG systems and NLP
-- **Repository**: [GitHub](https://github.com/saadi-js/Ecommerce-DataBase-Assistant-Complete-djangoAPP)
-
-### 🛒 PALESSI - E-Commerce Platform
-- **Tech Stack**: Django, Python, Machine Learning, SQLite
-- **Features**: AI-powered recommendations and intelligent product management
-- **Repository**: [GitHub](https://github.com/saadi-js/PALESSI)
-
-### 📦 Amazon Clone
-- **Tech Stack**: HTML5, CSS3, Vanilla JavaScript
-- **Features**: 68+ products, advanced search, responsive design
-- **Repository**: [GitHub](https://github.com/saadi-js/Amazon-Clone)
-
-### 💰 TrackWise - Expense Tracker
-- **Tech Stack**: Flutter, Dart, Machine Learning
-- **Features**: AI expense categorization and budget predictions
-- **Repository**: [GitHub](https://github.com/saadi-js/Flutter_app)
-
 ## 🎨 Theme System
 
 The portfolio features a sophisticated theme system with:
@@ -161,7 +139,7 @@ The portfolio features a sophisticated theme system with:
 - **Professional Gradients**: Subtle, mature color transitions
 - **Component Integration**: All components respect theme colors
 
-## 📱 Responsive Design
+##  Responsive Design
 
 ### Breakpoints
 - **Mobile**: 576px and below
@@ -175,7 +153,7 @@ The portfolio features a sophisticated theme system with:
 - Optimized typography scaling
 - Efficient image loading
 
-## 🔧 Customization
+## Customization
 
 ### Adding New Projects
 1. Edit `src/pages/Projects/Projects.tsx`
@@ -192,14 +170,14 @@ The portfolio features a sophisticated theme system with:
 2. Export from component's index file
 3. Import and use in pages
 
-## 🚀 Performance
+## Performance
 
 - **Lighthouse Score**: 95+ across all metrics
 - **Bundle Size**: Optimized with code splitting
 - **Loading Speed**: Lazy loading and image optimization
 - **SEO**: Meta tags and structured data
 
-## 📊 Analytics & SEO
+## Analytics & SEO
 
 ### SEO Features
 - Dynamic meta tags per page
@@ -213,7 +191,7 @@ The portfolio features a sophisticated theme system with:
 - Custom event tracking setup
 - Performance monitoring hooks
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -221,20 +199,10 @@ The portfolio features a sophisticated theme system with:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
-
-**Saadi** - AI/ML Engineer & Full-Stack Developer
-
-- 🌐 **Portfolio**: [Live Demo](https://portfolio-deployed-pi.vercel.app/)
-- 💼 **LinkedIn**: [linkedin.com/in/saad-chattha-568901263](https://www.linkedin.com/in/saad-chattha-568901263/)
-- 🐙 **GitHub**: [github.com/saadi-js](https://github.com/saadi-js)
-- 📧 **Email**: saadchattha77@gmail.com
-
----
 
 ## 🙏 Acknowledgments
 
@@ -245,7 +213,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-<div align="center">
-  <p>⭐ Star this repository if you found it helpful!</p>
-  <p>Made with ❤️ by <a href="https://github.com/saadi-js">Saadi</a></p>
-</div>
+

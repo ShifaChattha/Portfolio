@@ -358,7 +358,7 @@ const Projects: React.FC = () => {
     "REST API"
   ],
   visualizationUrl: "/projects/E MedCare Portal",
-  githubUrl: "https://github.com/yourusername/e-medcare-portal",
+  githubUrl: "https://github.com/ShifaChattha/AI-Powered-E-MedCare-Portal",
   status: "Completed"
 }
   ];

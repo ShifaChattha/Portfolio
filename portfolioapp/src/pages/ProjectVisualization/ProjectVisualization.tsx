@@ -518,7 +518,7 @@ const projectData: Record<string, ProjectData> = {
   "/assets/EMedCare/patient dashboard.jpg",
 
   ],
-    githubUrl: 'https://github.com/ShifaChattha/celebrity-face-recognition-cv',
+    githubUrl: 'https://github.com/ShifaChattha/AI-Powered-E-MedCare-Portal',
     demoUrl: '#'
   }
 

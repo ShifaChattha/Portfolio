@@ -357,7 +357,7 @@ const Projects: React.FC = () => {
     "Docker",
     "REST API"
   ],
-  visualizationUrl: "/projects/cineface-recognition",
+  visualizationUrl: "/projects/E MedCare Portal",
   githubUrl: "https://github.com/yourusername/e-medcare-portal",
   status: "Completed"
 }

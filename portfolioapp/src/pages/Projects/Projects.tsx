@@ -329,7 +329,7 @@ const Projects: React.FC = () => {
   id: 5,
   title: "AI-Powered E MedCare Portal",
   type: "Final Year Project",
-  category: "Healthcare Management System",
+  category: "Full Stack Development",
   description: "An intelligent healthcare platform that enables patients to book digital appointments, order medicines online, manage prescriptions, and monitor their health using AI-powered disease prediction and personalized diet planning. The system streamlines healthcare services through e-pharmacy integration, digital prescription management, appointment scheduling, and automated email notifications.",
   features: [
     "Online Doctor Appointment Booking",

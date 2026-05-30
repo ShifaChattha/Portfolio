@@ -494,13 +494,29 @@ const projectData: Record<string, ProjectData> = {
     "Docker",
     "REST API"
   ],
+    
     images: [
-    "/assets/EMedCare/home.png",
-    "/assets/EMedCare/appointment.png",
-    "/assets/EMedCare/epharmacy.png",
-    "/assets/EMedCare/diabetes-prediction.png",
-    "/assets/EMedCare/diet-planner.png",
-    "/assets/EMedCare/dashboard.png"
+  "/assets/EMedCare/about.jpg",
+  "/assets/EMedCare/appointment Booking.jpg",
+  "/assets/EMedCare/appointment slip.jpg",
+  "/assets/EMedCare/appointments.jpg",
+  "/assets/EMedCare/booked appointment.jpg",
+  "/assets/EMedCare/diabetes prediction.jpg",
+  "/assets/EMedCare/diet plan.jpg",
+  "/assets/EMedCare/doctor Profile.jpg",
+  "/assets/EMedCare/e pharmacy.jpg",
+  "/assets/EMedCare/glocues trends.jpg",
+  "/assets/EMedCare/Health Monitor.jpg",
+  "/assets/EMedCare/home.jpg",
+  "/assets/EMedCare/lab booking.jpg",
+  "/assets/EMedCare/lab module.jpg",
+  "/assets/EMedCare/patient dashboard.jpg",
+  "/assets/EMedCare/results.jpg",
+  "/assets/EMedCare/sign in.jpg",
+  "/assets/EMedCare/sign up.jpg",
+  "/assets/EMedCare/smart diet planner.jpg",
+  "/assets/EMedCare/splash.jpg"
+
   ],
     githubUrl: 'https://github.com/ShifaChattha/celebrity-face-recognition-cv',
     demoUrl: '#'

@@ -508,7 +508,7 @@ const projectData: Record<string, ProjectData> = {
   "/assets/EMedCare/booked appointment.jpg",
   "/assets/EMedCare/e pharmacy.jpg",
   "/assets/EMedCare/Haelth Monitor.jpg",
-  "/assets/EMedCare/diabetes prediction.jpg",
+  "/assets/EMedCare/diabetes predicton.jpg",
   "/assets/EMedCare/results.jpg",
   "/assets/EMedCare/smart diet planner.jpg",
   "/assets/EMedCare/diet plan.jpg",

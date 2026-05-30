@@ -323,6 +323,43 @@ const Projects: React.FC = () => {
   githubUrl: "https://github.com/ShifaChattha/celebrity-face-recognition-cv", // Update with your actual repo name
   visualizationUrl: "/projects/cineface-recognition",
   status: "Complete"
+},
+
+{
+  id: 5,
+  title: "AI-Powered E MedCare Portal",
+  type: "Final Year Project",
+  category: "Healthcare Management System",
+  description: "An intelligent healthcare platform that enables patients to book digital appointments, order medicines online, manage prescriptions, and monitor their health using AI-powered disease prediction and personalized diet planning. The system streamlines healthcare services through e-pharmacy integration, digital prescription management, appointment scheduling, and automated email notifications.",
+  features: [
+    "Online Doctor Appointment Booking",
+    "Digital Prescription Slip Management",
+    "E-Pharmacy for Medicine Ordering",
+    "AI-Based Diabetes Prediction Module",
+    "Smart Diet Planner with Personalized Recommendations",
+    "Patient Health Tracking Dashboard",
+    "Appointment Cancellation & Rescheduling",
+    "Automated Email Notifications and Reminders",
+    "Secure User Authentication & Authorization",
+    "RESTful APIs for Frontend-Backend Communication"
+  ],
+  techStack: [
+    "Django",
+    "Python",
+    "Django REST Framework (DRF)",
+    "MySQL",
+    "Machine Learning",
+    "Scikit-learn",
+    "JavaScript",
+    "Bootstrap",
+    "HTML5",
+    "CSS3",
+    "Docker",
+    "REST API"
+  ],
+  visualizationUrl: "/projects/cineface-recognition",
+  githubUrl: "https://github.com/yourusername/e-medcare-portal",
+  status: "Completed"
 }
   ];
 

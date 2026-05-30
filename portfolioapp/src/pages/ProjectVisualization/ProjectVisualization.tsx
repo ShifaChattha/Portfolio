@@ -475,6 +475,35 @@ const projectData: Record<string, ProjectData> = {
     images: ['/assets/FaceReco/Screenshot (147).png', '/assets/FaceReco/Screenshot (148).png', '/assets/FaceReco/Screenshot (150).png', '/assets/FaceReco/Screenshot (145).png', '/assets/FaceReco/Screenshot (146).png', '/assets/FaceReco/Screenshot (143).png'],
     githubUrl: 'https://github.com/ShifaChattha/celebrity-face-recognition-cv',
     demoUrl: '#'
+  },
+   'E MedCare Portal': {
+    id: 5,
+    title: 'AI-Powered E-MedCare Portal',
+    description: "An intelligent healthcare platform that enables patients to book digital appointments, order medicines online, manage prescriptions, and monitor their health using AI-powered disease prediction and personalized diet planning. The system streamlines healthcare services through e-pharmacy integration, digital prescription management, appointment scheduling, and automated email notifications.",
+    techStack: [
+    "Django",
+    "Python",
+    "Django REST Framework (DRF)",
+    "MySQL",
+    "Machine Learning",
+    "Scikit-learn",
+    "JavaScript",
+    "Bootstrap",
+    "HTML5",
+    "CSS3",
+    "Docker",
+    "REST API"
+  ],
+    images: [
+    "/assets/EMedCare/home.png",
+    "/assets/EMedCare/appointment.png",
+    "/assets/EMedCare/epharmacy.png",
+    "/assets/EMedCare/diabetes-prediction.png",
+    "/assets/EMedCare/diet-planner.png",
+    "/assets/EMedCare/dashboard.png"
+  ],
+    githubUrl: 'https://github.com/ShifaChattha/celebrity-face-recognition-cv',
+    demoUrl: '#'
   }
 
 };
